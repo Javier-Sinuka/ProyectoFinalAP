@@ -1,1 +1,9 @@
-
+html, body{
+  height: 100vh;
+}
+.backgound-general{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+.margin-inter{
+  padding: 1.5rem;
+}
