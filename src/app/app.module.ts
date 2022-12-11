@@ -7,6 +7,7 @@ import { LoguinComponent } from './components/loguin/loguin.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { CreateAccountComponent } from './components/create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
     LoguinComponent,
     Pagina404Component,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
