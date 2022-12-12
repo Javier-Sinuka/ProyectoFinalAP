@@ -20,3 +20,9 @@ html, body{
   font-variant: small-caps;
   text-transform: capitalize;
 }
+.logo{
+  font-size: 2rem;
+}
+.logo-color{
+  color: whitesmoke;
+}
