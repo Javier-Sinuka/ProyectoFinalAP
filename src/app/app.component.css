@@ -1,26 +1,42 @@
 body{
+  position: relative;
   font-family: 'Lato', sans-serif;
   margin: 0;
-  min-height: 100vh;
+  min-height: 100%;
 }
+
+router-outlet{
+  position: absolute;
+
+  width: 100%;
+}
+
+app-header{
+  position: fixed;
+  overflow: hidden;
+}
+
+app-footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 .backgound-general{
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 .margin-inter{
   padding: 2rem;
 }
+.fixed{
+  position: fixed;
+  width: 100%;
+  transition: 0.2s linear;
+  top: 0px;
+}
+.nofixed{
+  position: static;
+  transition: 0.2s linear;
+  top: -50px;
+}
 
-.logo{
-  font-size: 2rem;
-  /*font-family: 'Overpass', sans-serif;*/
-  /*font-family: 'Open Sans', sans-serif;*/
-}
-.logo-color{
-  color: whitesmoke;
-}
-.nav-bar-propio{
-  margin: 0;
-}
-section a {
-  border-radius: 20px;
-}

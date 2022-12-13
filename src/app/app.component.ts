@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 
 @Component({
@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent { //Eliminar constructor si no soluciono pantalla blanca
   title = 'Portafolio';
   isCollapsed = false;
+
+  navbarfixed:boolean = false;
+
+  @HostListener('window:scroll',['$event']) onscroll(){
+    if(window.screenY > 100){
+      this.navbarfixed = true;
+    }else{
+      this.navbarfixed = false;
+    }
+  }
 }

@@ -9,6 +9,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     Pagina404Component,
     HomeComponent,
     AboutMeComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
+    FooterComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

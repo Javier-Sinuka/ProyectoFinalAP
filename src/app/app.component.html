@@ -10,86 +10,22 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 </head>
-<body class=" border-0 backgound-general">
 
-<nav class="navbar navbar-dark fixed-top nav-bar-propio">
-  <div class="container-fluid margin-inter">
-    <figure class="text-center">
-      <blockquote class="blockquote logo-color logo">
-        <p>PORTAFOLIO <strong>WEB</strong></p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        By <cite title="Source Title">Javier Siñuka</cite>
-      </figcaption>
-    </figure>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">By Javier Sinuka</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about-me">About Me</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Log In
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="/loguin">Log In Now</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="/create-account">Create Account</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
+<body class="backgound-general border-0">
+<div class="row">
+  <div (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'" >
+    <!-- HEADER -->
+    <app-header></app-header>
   </div>
-</nav>
-
-<router-outlet></router-outlet>
-
-<!-- FOOTER -->
-<div>
-  <footer class="bg-dark text-center text-white">
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/javiersiniuka" role="button"
-        ><i class="fab fa-twitter"></i
-        ></a>
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/javier_sinuka/" role="button"
-        ><i class="fab fa-instagram"></i
-        ></a>
-
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/javier-si%C3%B1uka-53a2a61a4/" role="button"
-        ><i class="fab fa-linkedin-in"></i
-        ></a>
-
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Javier-Sinuka" role="button"
-        ><i class="fab fa-github"></i
-        ></a>
-      </section>
-    </div>
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright - Javier Siñuka
-    </div>
-
-  </footer>
+  <br>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <br>
+  <div>
+    <!-- FOOTER -->
+    <app-footer></app-footer>
+  </div>
 </div>
 </body>
 </html>

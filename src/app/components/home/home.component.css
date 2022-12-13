@@ -91,3 +91,18 @@ main{
   padding: 4rem;
   color: white;
 }
+.texto-inicial{
+  color: white;
+  font-size: 5rem;
+}
+.texto-inicial cite{
+  font-size: 1.5rem;
+}
+.autor{
+  text-align: right;
+  padding-right: 5rem;
+}
+.texto-turing{
+  padding-top: 8rem;
+  padding-left: 3rem;
+}
