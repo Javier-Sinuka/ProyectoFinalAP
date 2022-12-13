@@ -1,6 +1,7 @@
-html, body{
-  height: 100vh;
-  border: 0;
+body{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  min-height: 100vh;
 }
 .backgound-general{
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -8,21 +9,18 @@ html, body{
 .margin-inter{
   padding: 2rem;
 }
-.word-personal{
-  font-family: Arial;
-  font-size: 24px;
-  letter-spacing: 0px;
-  word-spacing: 0px;
-  color: #f5f5f5;
-  font-weight: bold;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: capitalize;
-}
+
 .logo{
   font-size: 2rem;
+  /*font-family: 'Overpass', sans-serif;*/
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 .logo-color{
   color: whitesmoke;
+}
+.nav-bar-propio{
+  margin: 0;
+}
+section a {
+  border-radius: 20px;
 }

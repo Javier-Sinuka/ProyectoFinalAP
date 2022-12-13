@@ -8,6 +8,7 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CreateAccountComponent } from './components/create-account/create-account.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,11 @@ import { CreateAccountComponent } from './components/create-account/create-accou
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
