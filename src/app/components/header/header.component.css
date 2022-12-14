@@ -1,3 +1,4 @@
+@import 'node_modules/mdb-ui-kit/css/mdb.min.css';
 header{
   display: flex;
   justify-content: space-between;
@@ -11,7 +12,21 @@ header{
 }
 .nav-bar-propio{
   margin: 0;
-  padding: 2rem;
+  padding: 1.5rem;
 }
+.color{
+  background: rgba(41, 50, 60, 0.0);
+}
+.navbar-nav-scroll{
+  background: rgba(41, 50, 60, 0.8) !important;
+}
+.clor{
+  color: white;
+  font-size: 3rem;
+}
+/*.clor span{*/
+/*  background-color: #485563;*/
+/*}*/
+
 
 

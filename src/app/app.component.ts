@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 
 @Component({
@@ -6,7 +6,7 @@ import {Component, HostListener} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent { //Eliminar constructor si no soluciono pantalla blanca
+export class AppComponent implements OnInit{ //Eliminar constructor si no soluciono pantalla blanca
   title = 'Portafolio';
   isCollapsed = false;
 
@@ -18,5 +18,8 @@ export class AppComponent { //Eliminar constructor si no soluciono pantalla blan
     }else{
       this.navbarfixed = false;
     }
+  }
+
+  ngOnInit(): void {
   }
 }

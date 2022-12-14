@@ -12,21 +12,20 @@
 </head>
 
 <body class="backgound-general border-0">
-<div class="row">
-  <div (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'" >
-    <!-- HEADER -->
-    <app-header></app-header>
+  <div class="row">
+    <div>
+      <app-header></app-header>
+      <div class="router-wi">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+    <br>
+
+    <div>
+      <app-footer></app-footer>
+    </div>
   </div>
-  <br>
-  <div>
-    <router-outlet></router-outlet>
-  </div>
-  <br>
-  <div>
-    <!-- FOOTER -->
-    <app-footer></app-footer>
-  </div>
-</div>
 </body>
 </html>
 

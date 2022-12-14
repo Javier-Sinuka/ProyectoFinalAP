@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-dark fixed-top nav-bar-propio">
+  <nav id="menu" class="navbar navbar-dark fixed-top nav-bar-propio color">
   <div class="container-fluid margin-inter">
     <figure class="text-center">
       <blockquote class="blockquote logo">
@@ -10,7 +10,7 @@
       </figcaption>
     </figure>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa-solid fa-bars clor"></i>
     </button>
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header">
@@ -43,3 +43,18 @@
   </div>
 </nav>
 </header>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZjv+d/sdmMqp/nOQwliLvUsJFDHW+k90mg/a/EheAdgtzNs3hpfag6Ed950n"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/boostrap.min.js"></script>
+
+<script>
+  $(window).scroll(function(){
+    if($("#menu").offset().top > 56){
+      $("#menu").addClass("bg-inverse");
+    }else{
+      $("#menu").removeClass("bg-inverse");
+    }
+  });
+</script>
