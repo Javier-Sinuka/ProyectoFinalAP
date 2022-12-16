@@ -93,7 +93,12 @@ main{
 }
 .texto-inicial{
   color: white;
+  font-family: 'Rubik 80s Fade', cursive;
   font-size: 5rem;
+  text-shadow: 0px 15px 7px #515a6c;
+}
+.texto-inicial-two{
+  font-family: 'Permanent Marker', cursive;
 }
 .texto-inicial cite{
   font-size: 1.5rem;
@@ -105,4 +110,17 @@ main{
 .texto-turing{
   padding-top: 8rem;
   padding-left: 3rem;
+}
+.moving{
+  padding-left: 8rem;
+}
+.pad{
+  padding-top: 5rem;
+  padding-right: 2rem;
+}
+.pad-d{
+  padding-top: 2rem;
+}
+.pad-p{
+  padding-left: 4rem;
 }
