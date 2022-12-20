@@ -8,6 +8,7 @@ import {CreateAccountComponent} from "./components/create-account/create-account
 import {FooterComponent} from "./components/footer/footer.component";
 import {HeaderComponent} from "./components/header/header.component";
 
+
 const routes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: "full"},
   {path:'***', component:Pagina404Component},

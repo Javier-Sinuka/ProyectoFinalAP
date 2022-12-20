@@ -22,7 +22,7 @@ import { HeaderComponent } from './components/header/header.component';
     AboutMeComponent,
     CreateAccountComponent,
     FooterComponent,
-    HeaderComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

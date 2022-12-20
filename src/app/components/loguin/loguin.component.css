@@ -112,7 +112,7 @@ section .signin .content .form .inputBx i{
   justify-content: space-between;
 }
 .signin .content .form .links a{
-  color: white;
+  color: #7be4e5;
   text-decoration: none;
 }
 .signin .content .form .links a:nth-child(2){

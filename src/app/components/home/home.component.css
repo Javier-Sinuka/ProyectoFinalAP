@@ -9,6 +9,8 @@ main{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-top: 5rem;
+  height: 3240px; /* Aca modifique el alto, medio raro*/
 }
 .cube{
   position: relative;
