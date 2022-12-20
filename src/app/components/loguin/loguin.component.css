@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+h2{
+  text-shadow: 0px 7px 7px #2f3944;
+}
 body{
   position: absolute;
   display: flex;
@@ -140,4 +143,5 @@ section .signin .content .form .inputBx i{
     height: calc(20vw - 2px);
   }
 }
+
 
