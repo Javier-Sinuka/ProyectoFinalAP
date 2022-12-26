@@ -11,6 +11,7 @@ import { CreateAccountComponent } from './components/create-account/create-accou
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HeaderComponent } from './components/header/header.component';
     AboutMeComponent,
     CreateAccountComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,6 @@
 .logo{
   font-size: 2rem;
   color: whitesmoke;
-  /*font-family: 'Overpass', sans-serif;*/
-  /*font-family: 'Open Sans', sans-serif;*/
 }
 .nav-bar-propio{
   margin: 0;
@@ -18,6 +16,13 @@
 .color-nav{
   background-color: rgba(41, 50, 60, 0.95);
 }
+
+@media (max-width: 720px) {
+  .clor{
+    padding-bottom: 8px;
+  }
+}
+
 
 
 

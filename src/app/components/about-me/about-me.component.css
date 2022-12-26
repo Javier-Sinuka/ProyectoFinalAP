@@ -12,8 +12,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 75vh;
 }
+@media (max-width: 960px) {
+  .content{
+    padding-top: 2rem;
+  }
+}
+
 .container{
   position: relative;
   display: flex;
@@ -131,15 +137,89 @@
 /******************************************/
 .text-abbout-me{
   color: white;
-  padding: 5rem;
+  padding-top: 4rem;
 }
-.text-abbout-me p strong{
+.text-abbout-me h1 strong{
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
   text-shadow: 0px 9px 7px #515a6c;
 }
+.text-abbout-me .clase-t{
+  padding-top: 1rem;
+}
+@media (max-width: 720px) {
+  .text-abbout-me h1 strong{
+    font-size: 2.2rem;
+  }
+}
 .content-abbout{
   padding-top: 7rem;
+}
+
+/*******************************************/
+.abbout{
+  width: 100%;
+  padding: 78px 0px;
+}
+.abbout img{
+  height: auto;
+  width: 420px;
+  border-radius: 50px;
+}
+@media (max-width: 960px) {
+  .abbout img{
+    height: auto;
+    width: 290px;
+    border-radius: 50px;
+  }
+}
+.about-text{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h5{
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+span{
+    color: rgba(4, 244, 252, 0.76);
+}
+.about-text p{
+  color: white;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+@media (max-width: 720px) {
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-text{
+    padding-left: 1rem;
+  }
+  .abbout img{
+    height: auto;
+    width: 150px;
+    border-radius: 100px;
+  }
+  .about-text h5{
+    padding-top: 15px;
+  }
 }

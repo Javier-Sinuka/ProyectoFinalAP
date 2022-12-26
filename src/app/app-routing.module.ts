@@ -7,6 +7,7 @@ import {AboutMeComponent} from "./components/about-me/about-me.component";
 import {CreateAccountComponent} from "./components/create-account/create-account.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {HeaderComponent} from "./components/header/header.component";
+import {ContactMeComponent} from "./components/contact-me/contact-me.component";
 
 
 const routes: Routes = [
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'create-account', component:CreateAccountComponent},
   {path:'about-me', component:AboutMeComponent},
   {path: 'footer', component:FooterComponent},
-  {path: 'header', component:HeaderComponent}
+  {path: 'header', component:HeaderComponent},
+  {path: 'contact-me', component:ContactMeComponent}
 ];
 
 @NgModule({
