@@ -1,8 +1,10 @@
-/*section a {*/
-/*  border-radius: 20px;*/
-/*}*/
-/*i{*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

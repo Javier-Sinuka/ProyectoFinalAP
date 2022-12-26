@@ -127,3 +127,19 @@
   text-transform: uppercase;
   color: rgba(255,255,255,0.75);
 }
+
+/******************************************/
+.text-abbout-me{
+  color: white;
+  padding: 5rem;
+}
+.text-abbout-me p strong{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 0px 9px 7px #515a6c;
+}
+.content-abbout{
+  padding-top: 7rem;
+}
