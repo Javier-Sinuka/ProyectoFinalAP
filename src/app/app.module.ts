@@ -12,6 +12,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
     CreateAccountComponent,
     FooterComponent,
     HeaderComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
