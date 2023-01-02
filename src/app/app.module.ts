@@ -13,6 +13,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { ExperienceComponent } from './components/experience/experience.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { ListaExperienciasComponent } from './components/experience-components/lista-experiencias/lista-experiencias.component';
+import { DetalleExperienciaComponent } from './components/experience-components/detalle-experiencia/detalle-experiencia.component';
+import { NuevaExperienciaComponent } from './components/experience-components/nueva-experiencia/nueva-experiencia.component';
+import { EditarExperienciaComponent } from './components/experience-components/editar-experiencia/editar-experiencia.component';
+
+import { HttpClientModule } from '@angular/common/http'
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -28,11 +37,19 @@ import { ExperienceComponent } from './components/experience/experience.componen
     HeaderComponent,
     ContactMeComponent,
     ExperienceComponent,
+    ListaExperienciasComponent,
+    DetalleExperienciaComponent,
+    NuevaExperienciaComponent,
+    EditarExperienciaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

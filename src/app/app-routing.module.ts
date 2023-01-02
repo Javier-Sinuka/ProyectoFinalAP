@@ -9,20 +9,36 @@ import {FooterComponent} from "./components/footer/footer.component";
 import {HeaderComponent} from "./components/header/header.component";
 import {ContactMeComponent} from "./components/contact-me/contact-me.component";
 import {ExperienceComponent} from "./components/experience/experience.component";
+import {
+  ListaExperienciasComponent
+} from "./components/experience-components/lista-experiencias/lista-experiencias.component";
+import {
+  DetalleExperienciaComponent
+} from "./components/experience-components/detalle-experiencia/detalle-experiencia.component";
+import {
+  NuevaExperienciaComponent
+} from "./components/experience-components/nueva-experiencia/nueva-experiencia.component";
+import {
+  EditarExperienciaComponent
+} from "./components/experience-components/editar-experiencia/editar-experiencia.component";
 
 
 
 const routes: Routes = [
-  {path:'', redirectTo: '/home', pathMatch: "full"},
-  {path:'***', component:Pagina404Component},
-  {path:'home', component:HomeComponent},
-  {path:'loguin', component:LoguinComponent},
-  {path:'create-account', component:CreateAccountComponent},
-  {path:'about-me', component:AboutMeComponent},
+  {path: '', redirectTo: '/home', pathMatch: "full"},
+  {path: 'home', component:HomeComponent},
+  {path: 'loguin', component:LoguinComponent},
+  {path: 'create-account', component:CreateAccountComponent},
+  {path: 'about-me', component:AboutMeComponent},
   {path: 'footer', component:FooterComponent},
   {path: 'header', component:HeaderComponent},
   {path: 'contact-me', component:ContactMeComponent},
   {path: 'experience', component:ExperienceComponent},
+  {path: 'lista-experiencia', component: ListaExperienciasComponent},
+  {path: 'detalle/:id', component: DetalleExperienciaComponent},
+  {path: 'nueva-experiencia', component: NuevaExperienciaComponent},
+  {path: 'editar/:id', component: EditarExperienciaComponent},
+  {path: '**', redirectTo: '', pathMatch: "full"},
 ];
 
 @NgModule({
